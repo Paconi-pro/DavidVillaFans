@@ -207,6 +207,56 @@
     .club-item:hover { background: var(--oro); color: #000; transform: translateY(-10px); }
     .club-item span { font-family: 'Bebas Neue', sans-serif; font-size: 20px; display: block; }
 
+
+    .stats-section {
+      padding: 2rem 2rem 6rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .stats-card {
+      background: var(--gris);
+      border: 1px solid rgba(245,197,24,0.2);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .stats-card h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+      font-size: 28px;
+      margin-bottom: 0.8rem;
+      color: var(--oro);
+    }
+
+    .stat-row { margin-bottom: 0.8rem; }
+
+    .stat-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .bar-track {
+      width: 100%;
+      height: 12px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .bar-goles { background: linear-gradient(90deg, #f5c518, #ffdd57); }
+    .bar-asistencias { background: linear-gradient(90deg, #2ec4ff, #6ee7ff); }
+
     /* ── CURIOSIDADES ── */
     .facts-section {
       background: var(--oro);
@@ -337,6 +387,60 @@
       <a href="https://www.melbournecityfc.com.au/" target="_blank" class="club-item" style="text-decoration: none; color: inherit;"><span>Melbourne City</span></a>
       <a href="https://www.nycfc.com/" target="_blank" class="club-item" style="text-decoration: none; color: inherit;"><span>New York City</span></a>
       <a href="https://www.vissel-kobe.co.jp/" target="_blank" class="club-item" style="text-decoration: none; color: inherit;"><span>Vissel Kobe</span></a>
+    </div>
+  </section>
+
+
+
+  <section class="stats-section" aria-label="Estadísticas de goles y asistencias por club">
+    <h2 style="text-align: center; font-family: 'Bebas Neue', sans-serif; font-size: 44px; margin-bottom: 2rem;">GOLES Y ASISTENCIAS POR EQUIPO</h2>
+
+    <div class="stats-card">
+      <h3>Sporting de Gijón</h3>
+      <div class="stat-row"><div class="stat-label"><span>Goles</span><span>41</span></div><div class="bar-track"><div class="bar-fill bar-goles" style="width: 38.3%;"></div></div></div>
+      <div class="stat-row"><div class="stat-label"><span>Asistencias</span><span>9</span></div><div class="bar-track"><div class="bar-fill bar-asistencias" style="width: 22.5%;"></div></div></div>
+    </div>
+
+    <div class="stats-card">
+      <h3>Real Zaragoza</h3>
+      <div class="stat-row"><div class="stat-label"><span>Goles</span><span>32</span></div><div class="bar-track"><div class="bar-fill bar-goles" style="width: 29.9%;"></div></div></div>
+      <div class="stat-row"><div class="stat-label"><span>Asistencias</span><span>10</span></div><div class="bar-track"><div class="bar-fill bar-asistencias" style="width: 25%;"></div></div></div>
+    </div>
+
+    <div class="stats-card">
+      <h3>Valencia CF</h3>
+      <div class="stat-row"><div class="stat-label"><span>Goles</span><span>107</span></div><div class="bar-track"><div class="bar-fill bar-goles" style="width: 100%;"></div></div></div>
+      <div class="stat-row"><div class="stat-label"><span>Asistencias</span><span>39</span></div><div class="bar-track"><div class="bar-fill bar-asistencias" style="width: 97.5%;"></div></div></div>
+    </div>
+
+    <div class="stats-card">
+      <h3>FC Barcelona</h3>
+      <div class="stat-row"><div class="stat-label"><span>Goles</span><span>48</span></div><div class="bar-track"><div class="bar-fill bar-goles" style="width: 44.9%;"></div></div></div>
+      <div class="stat-row"><div class="stat-label"><span>Asistencias</span><span>24</span></div><div class="bar-track"><div class="bar-fill bar-asistencias" style="width: 60%;"></div></div></div>
+    </div>
+
+    <div class="stats-card">
+      <h3>Atlético de Madrid</h3>
+      <div class="stat-row"><div class="stat-label"><span>Goles</span><span>15</span></div><div class="bar-track"><div class="bar-fill bar-goles" style="width: 14%;"></div></div></div>
+      <div class="stat-row"><div class="stat-label"><span>Asistencias</span><span>4</span></div><div class="bar-track"><div class="bar-fill bar-asistencias" style="width: 10%;"></div></div></div>
+    </div>
+
+    <div class="stats-card">
+      <h3>Melbourne City</h3>
+      <div class="stat-row"><div class="stat-label"><span>Goles</span><span>2</span></div><div class="bar-track"><div class="bar-fill bar-goles" style="width: 1.9%;"></div></div></div>
+      <div class="stat-row"><div class="stat-label"><span>Asistencias</span><span>1</span></div><div class="bar-track"><div class="bar-fill bar-asistencias" style="width: 2.5%;"></div></div></div>
+    </div>
+
+    <div class="stats-card">
+      <h3>New York City FC</h3>
+      <div class="stat-row"><div class="stat-label"><span>Goles</span><span>80</span></div><div class="bar-track"><div class="bar-fill bar-goles" style="width: 74.8%;"></div></div></div>
+      <div class="stat-row"><div class="stat-label"><span>Asistencias</span><span>40</span></div><div class="bar-track"><div class="bar-fill bar-asistencias" style="width: 100%;"></div></div></div>
+    </div>
+
+    <div class="stats-card">
+      <h3>Vissel Kobe</h3>
+      <div class="stat-row"><div class="stat-label"><span>Goles</span><span>13</span></div><div class="bar-track"><div class="bar-fill bar-goles" style="width: 12.1%;"></div></div></div>
+      <div class="stat-row"><div class="stat-label"><span>Asistencias</span><span>7</span></div><div class="bar-track"><div class="bar-fill bar-asistencias" style="width: 17.5%;"></div></div></div>
     </div>
   </section>
 
